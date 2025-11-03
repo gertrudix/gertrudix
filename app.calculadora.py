@@ -2,12 +2,6 @@
 import streamlit as st
 import numpy as np
 
-import sys, subprocess
-try:
-    import matplotlib.pyplot as plt
-except ModuleNotFoundError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib>=3.8"])
-    import matplotlib.pyplot as plt
 
 REGIONES = {"Andalucía":1750,"Aragón":1650,"Asturias":1350,"Baleares":1600,"Canarias":1800,
 "Cantabria":1350,"Castilla-La Mancha":1700,"Castilla y León":1550,"Cataluña":1550,
